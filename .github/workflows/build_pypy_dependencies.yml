@@ -41,7 +41,7 @@ jobs:
           # Have to force <1.4.0 (see https://github.com/scipy/scipy/releases/tag/v1.4.0)
           python -m pip install "$(cat requirements.txt | grep scipy),<1.4.0"
           python -m pip install "$(cat requirements.txt | grep scikit-learn)"
-          https://github.com/regardscitoyens/the-law-factory-parser/issues/108#issuecomment-439833131
+          # https://github.com/regardscitoyens/the-law-factory-parser/issues/108#issuecomment-439833131
           python -m pip install -I lxml
           python -m pip install "$(cat requirements.txt | grep pandas)"
           python -m pip install "$(cat requirements.txt | grep statsmodels)"
