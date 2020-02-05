@@ -29,6 +29,7 @@ jobs:
       - name: Installing build requirements
         run: |
           apt-get -yq update && apt-get -yq install \
+            build-essential \
             libatlas-dev \
             libatlas-base-dev \
             liblapack-dev \
