@@ -129,3 +129,4 @@ VERSION
 
 # Since we use a Jinja Template, we only want this to be created as build time
 /conda/
+meta.yaml
