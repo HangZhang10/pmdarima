@@ -2,15 +2,15 @@
 package:
   name: 'pmdarima'
   {% raw %}
-  version: "{{ environ.get('GIT_DESCRIBE_TAG', '') }}"
+  version: "{{ environ.get('GIT_DESCRIBE_TAG', '0.0.0') }}"
 
 {# Path where setup.py lies from root/conda (since that is where this will be rendered) #}
 source:
-  git_rev: "v{{ environ.get('GIT_DESCRIBE_TAG', '') }}"
+  git_rev: "{{ environ.get('GIT_DESCRIBE_TAG', '0.0.0') }}"
   git_url: https://github.com/alkaline-ml/pmdarima.git
 
 build:
-  number: "{{ environ.get('GIT_DESCRIBE_NUMBER', '') }}"
+  number: "{{ environ.get('GIT_DESCRIBE_NUMBER', '0') }}"
   string: "{{ environ.get('GIT_BUILD_STR', '') }}"
   {% endraw %}
   script: 'python -m pip install . --no-deps -vv'
