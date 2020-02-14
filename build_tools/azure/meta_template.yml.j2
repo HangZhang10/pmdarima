@@ -12,8 +12,8 @@ source:
 build:
   number: "{{ environ.get('GIT_DESCRIBE_NUMBER', '') }}"
   string: "{{ environ.get('GIT_BUILD_STR', '') }}"
-  script: '{{ PYTHON }} -m pip install . --no-deps -vv'
   {% endraw %}
+  script: 'python -m pip install . --no-deps -vv'
   ignore_run_exports:
     - pip
     - statsmodels
