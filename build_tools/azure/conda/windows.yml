@@ -20,7 +20,7 @@ steps:
       conda create --name build-env python=$(python.version) --yes
       call activate build-env
       pip install -r requirements.txt
-      conda-build --python=$(python.version)
+      conda-build --python=$(python.version) .
     displayName: 'Building and testing conda distribution'
 
   # Run pmdarima.show_versions() because I don't 100% trust the conda builder
