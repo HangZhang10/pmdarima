@@ -11,7 +11,7 @@ VERSION_FILE = ROOT_DIRECTORY / 'pmdarima' / 'VERSION'
 REQUIREMENTS_FILE = ROOT_DIRECTORY / 'requirements.txt'
 
 # conda is weird about yml vs yaml, so we have to use yaml
-OUTPUT_DIR = ROOT_DIRECTORY
+OUTPUT_DIR = ROOT_DIRECTORY / 'conda'
 OUTPUT_FILE = ROOT_DIRECTORY / 'meta.yaml'
 
 TEMPLATE_PATH = Path(__file__).parent
